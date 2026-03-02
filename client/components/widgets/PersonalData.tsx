@@ -23,26 +23,29 @@ export default function PersonalData() {
       </div>
 
       {/* User Info */}
-      <div className="flex flex-col gap-2 mb-5">
-        <h4
-          className="text-[28px] font-bold text-[#4F4F4F] leading-6"
-          style={{
-            fontFamily: "'Loew Next Arabic', sans-serif",
-            letterSpacing: "-0.48px",
-          }}
-        >
-          Ahmed Radwan
-        </h4>
-        <p
-          className="text-xs font-medium leading-3"
-          style={{
-            fontFamily: "'Loew Next Arabic', sans-serif",
-            letterSpacing: "-0.2px",
-          }}
-        >
-          <span className="text-[#4F4F4F]/50">Job title:</span>
-          <span className="text-[#4F4F4F]"> Operations Officer</span>
-        </p>
+      <div className="flex flex-row items-center gap-2.5 mb-5">
+        <img src="/avatarimg.png" alt="avatarimg" className="size-[52px] object-contain rounded-full" />
+        <div className="flex flex-col gap-2 ">
+          <h4
+            className="text-[28px] font-bold text-[#4F4F4F] leading-6"
+            style={{
+              fontFamily: "'Loew Next Arabic', sans-serif",
+              letterSpacing: "-0.48px",
+            }}
+          >
+            Khalid I. Hamza
+          </h4>
+          <p
+            className="text-xs font-medium leading-3"
+            style={{
+              fontFamily: "'Loew Next Arabic', sans-serif",
+              letterSpacing: "-0.2px",
+            }}
+          >
+            <span className="text-[#4F4F4F]/50">Job title:</span>
+            <span className="text-[#4F4F4F]"> Operations Officer</span>
+          </p>
+        </div>
       </div>
 
       {/* Stats Cards */}

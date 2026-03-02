@@ -8,8 +8,6 @@ const quickAccessItems = [
   {
     icon: (
       <svg
-        width="24"
-        height="24"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -57,8 +55,6 @@ const quickAccessItems = [
   {
     icon: (
       <svg
-        width="24"
-        height="24"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -103,8 +99,6 @@ const quickAccessItems = [
   {
     icon: (
       <svg
-        width="24"
-        height="24"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -124,8 +118,6 @@ const quickAccessItems = [
   {
     icon: (
       <svg
-        width="24"
-        height="24"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -152,8 +144,6 @@ const quickAccessItems = [
   {
     icon: (
       <svg
-        width="24"
-        height="24"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -206,8 +196,6 @@ const quickAccessItems = [
   {
     icon: (
       <svg
-        width="24"
-        height="24"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -234,8 +222,6 @@ const quickAccessItems = [
   {
     icon: (
       <svg
-        width="24"
-        height="24"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -262,8 +248,6 @@ const quickAccessItems = [
   {
     icon: (
       <svg
-        width="24"
-        height="24"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -340,8 +324,10 @@ export default function QuickAccessCarousel() {
                   {/* Soft top highlight */}
                   <div className="absolute inset-0 rounded-[20px] bg-gradient-to-b from-white/70 to-transparent opacity-60 pointer-events-none" />
 
-                  <div className="size-[52px] rounded-xl flex items-center justify-center transition-transform duration-300 bg-white/90 shadow-[0_24px_32px_0_rgba(18,12,55,0.08)]">
-                    {item.icon}
+                  <div className="size-[52px] rounded-xl flex items-center justify-center">
+                    <div className="size-8 rounded-xl flex items-center justify-center">
+                      {item.icon}
+                    </div>
                   </div>
 
                   <span className="text-xs leading-[15px] font-bold text-[#4F4F4F] whitespace-pre-line text-left">
