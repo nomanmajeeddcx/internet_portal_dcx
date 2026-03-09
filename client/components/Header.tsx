@@ -32,22 +32,22 @@ export default function Header() {
       {/* Background image overlay */}
       <div
         className="absolute inset-0 pointer-events-none"
-      
+
       />
 
       <div className="w-full max-w-[1440px] mx-auto px-4 lg:px-[18px] relative">
         <div className="h-14 lg:h-[78px] flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-[23px]" onClick={closeDropdown}>
-            <div className="w-[46px] h-[46px] flex-shrink-0">
+          <Link to="/" className="flex items-center gap-1 lg:gap-[23px]" onClick={closeDropdown}>
+            <div className="size-6 lg:size-[46px] flex-shrink-0">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/e34a11552642a0f234b5d1963b8e9465e86e5471?width=92"
                 alt="Dammam Airports Logo"
                 className="w-full h-full object-contain"
               />
             </div>
-            <span className="text-black text-[20px] font-medium leading-5" style={{ fontFamily: 'Inter, sans-serif' }}>
-              Dammam Airports
+            <span className="text-black text-sm lg:text-xl font-medium leading-5" >
+              Dammam
             </span>
           </Link>
 
@@ -55,11 +55,10 @@ export default function Header() {
           <nav className="hidden lg:flex items-center gap-6 xl:gap-8" ref={dropdownRef}>
             <Link
               to="/"
-              className={`text-sm font-medium transition-colors relative pb-1 whitespace-nowrap ${
-                location.pathname === "/"
-                  ? "text-gray-900"
-                  : "text-gray-600 hover:text-gray-900"
-              }`}
+              className={`text-sm font-medium transition-colors relative pb-1 whitespace-nowrap ${location.pathname === "/"
+                ? "text-gray-900"
+                : "text-gray-600 hover:text-gray-900"
+                }`}
               onClick={closeDropdown}
             >
               Home
@@ -69,11 +68,10 @@ export default function Header() {
             </Link>
             <Link
               to="/h_v2"
-              className={`text-sm font-medium transition-colors relative pb-1 whitespace-nowrap ${
-                location.pathname === "/h_v2"
-                  ? "text-gray-900"
-                  : "text-gray-600 hover:text-gray-900"
-              }`}
+              className={`text-sm font-medium transition-colors relative pb-1 whitespace-nowrap ${location.pathname === "/h_v2"
+                ? "text-gray-900"
+                : "text-gray-600 hover:text-gray-900"
+                }`}
               onClick={closeDropdown}
             >
               Home V2
@@ -83,11 +81,10 @@ export default function Header() {
             </Link>
             <Link
               to="/h_v3"
-              className={`text-sm font-medium transition-colors relative pb-1 whitespace-nowrap ${
-                location.pathname === "/h_v3"
-                  ? "text-gray-900"
-                  : "text-gray-600 hover:text-gray-900"
-              }`}
+              className={`text-sm font-medium transition-colors relative pb-1 whitespace-nowrap ${location.pathname === "/h_v3"
+                ? "text-gray-900"
+                : "text-gray-600 hover:text-gray-900"
+                }`}
               onClick={closeDropdown}
             >
               Home V3
@@ -97,11 +94,10 @@ export default function Header() {
             </Link>
             <Link
               to="/components"
-              className={`text-sm font-medium transition-colors relative pb-1 whitespace-nowrap ${
-                location.pathname === "/components"
-                  ? "text-gray-900"
-                  : "text-gray-600 hover:text-gray-900"
-              }`}
+              className={`text-sm font-medium transition-colors relative pb-1 whitespace-nowrap ${location.pathname === "/components"
+                ? "text-gray-900"
+                : "text-gray-600 hover:text-gray-900"
+                }`}
               onClick={closeDropdown}
             >
               Components
@@ -111,11 +107,10 @@ export default function Header() {
             </Link>
             <Link
               to="/iconslib"
-              className={`text-sm font-medium transition-colors relative pb-1 whitespace-nowrap ${
-                location.pathname === "/iconslib"
-                  ? "text-gray-900"
-                  : "text-gray-600 hover:text-gray-900"
-              }`}
+              className={`text-sm font-medium transition-colors relative pb-1 whitespace-nowrap ${location.pathname === "/iconslib"
+                ? "text-gray-900"
+                : "text-gray-600 hover:text-gray-900"
+                }`}
               onClick={closeDropdown}
             >
               Icons Lib
@@ -132,9 +127,8 @@ export default function Header() {
               >
                 Who we are
                 <ChevronDown
-                  className={`w-3.5 h-3.5 transition-transform ${
-                    openDropdown === 'who-we-are' ? 'rotate-180' : ''
-                  }`}
+                  className={`w-3.5 h-3.5 transition-transform ${openDropdown === 'who-we-are' ? 'rotate-180' : ''
+                    }`}
                 />
               </button>
 
@@ -165,9 +159,8 @@ export default function Header() {
               >
                 How we work
                 <ChevronDown
-                  className={`w-3.5 h-3.5 transition-transform ${
-                    openDropdown === 'how-we-work' ? 'rotate-180' : ''
-                  }`}
+                  className={`w-3.5 h-3.5 transition-transform ${openDropdown === 'how-we-work' ? 'rotate-180' : ''
+                    }`}
                 />
               </button>
 
@@ -198,9 +191,8 @@ export default function Header() {
               >
                 Resources
                 <ChevronDown
-                  className={`w-3.5 h-3.5 transition-transform ${
-                    openDropdown === 'resources' ? 'rotate-180' : ''
-                  }`}
+                  className={`w-3.5 h-3.5 transition-transform ${openDropdown === 'resources' ? 'rotate-180' : ''
+                    }`}
                 />
               </button>
 

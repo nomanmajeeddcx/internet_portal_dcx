@@ -10,7 +10,7 @@ const documents = [
 
 export default function Documents() {
   return (
-    <div className="w-full max-w-[338px] rounded-[20px] bg-white/90 shadow-[0_24px_32px_0_rgba(18,12,55,0.08)] backdrop-blur-[12px] overflow-hidden p-6">
+    <div className="w-full lg:max-w-[338px] rounded-[20px] bg-white/90 shadow-[0_24px_32px_0_rgba(18,12,55,0.08)] backdrop-blur-[12px] overflow-hidden p-6">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-2.5">
@@ -28,29 +28,29 @@ export default function Documents() {
       <div className="flex flex-col gap-3">
         {documents.map((doc, index) => (
           <button
-          key={index}
-          className="flex items-center justify-between gap-3 px-4 py-3.5 rounded-xl bg-white shadow-[0_4px_12px_rgba(0,0,0,0.06)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.1)] transition-all hover:scale-[1.02] active:scale-[0.98] group"
-        >
-          <div className="flex items-center gap-3 flex-1 min-w-0">
-            
-            {/* Document Count Badge */}
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-blue-50 shrink-0">
-              <FileText className="w-4 h-4 text-blue-600" strokeWidth={2} />
-              <span className="text-sm font-semibold text-blue-600 whitespace-nowrap">
-                {doc.count}
+            key={index}
+            className="flex items-center justify-between gap-3 px-4 py-3.5 rounded-xl bg-white shadow-[0_4px_12px_rgba(0,0,0,0.06)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.1)] transition-all hover:scale-[1.02] active:scale-[0.98] group"
+          >
+            <div className="flex items-center gap-3 flex-1 min-w-0">
+
+              {/* Document Count Badge */}
+              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-blue-50 shrink-0">
+                <FileText className="w-4 h-4 text-blue-600" strokeWidth={2} />
+                <span className="text-sm font-semibold text-blue-600 whitespace-nowrap">
+                  {doc.count}
+                </span>
+              </div>
+
+              {/* Document Name */}
+              <span className="text-base font-semibold text-gray-700 truncate">
+                {doc.name}
               </span>
             </div>
-        
-            {/* Document Name */}
-            <span className="text-base font-semibold text-gray-700 truncate">
-              {doc.name}
-            </span>
-          </div>
-        
-          {/* Chevron */}
-          <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-[#7A60A9] transition-colors shrink-0" strokeWidth={1.5} />
-        </button>
-        
+
+            {/* Chevron */}
+            <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-[#7A60A9] transition-colors shrink-0" strokeWidth={1.5} />
+          </button>
+
         ))}
       </div>
     </div>
